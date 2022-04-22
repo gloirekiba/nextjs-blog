@@ -1,9 +1,9 @@
 import Head from "next/head";
-import Layout, { siteTitle } from "./components/layout";
+import Layout, { siteTitle } from "../components/layout";
 import utilStyles from "../styles/utils.module.css";
 import { getSortedPostsData } from "../lib/posts";
 import Link from "next/link";
-import Date from "./components/date";
+import Date from "../components/date";
 import { GetStaticProps } from "next";
 
 export default function Home({
@@ -21,8 +21,10 @@ export default function Home({
         <title>{siteTitle}</title>
       </Head>
       <section className={utilStyles.headingMd}>
-        <p>[Your Self Introduction]</p>
         <p>
+          Hello my name is <strong>Kiba</strong>, i am front-end React, Next.js develloper .
+        </p>
+        <p style={{ color: "red" }}>
           (This is a sample website - you’ll be building a site like this in{" "}
           <a href="https://nextjs.org/learn">our Next.js tutorial</a>.)
         </p>
